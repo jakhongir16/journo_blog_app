@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
       routerConfig: _appRouter.config(),
-    //  home: const MyHomePage(title: AppStrings.appName),
+      debugShowCheckedModeBanner: false,
+      //  home: const MyHomePage(title: AppStrings.appName),
     );
   }
 }

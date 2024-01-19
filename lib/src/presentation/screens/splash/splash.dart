@@ -9,11 +9,28 @@ class Splash extends StatefulWidget {
 }
 
 class _SplashState extends State<Splash> {
+   @override
+  void initState() {
+     moveToOnboard();
+     super.initState();
+  }
+
+  moveToOnboard() async {
+     await Future.delayed(const Duration(seconds: 4), (){
+       AutoRouter.of(context).push(const OnboardRoute());
+     });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.primaryColor,
-      body: Image.asset('assets/icons/main_logo.png'),
+      body: Center(
+        child: FadedScaleAnimation(
+            child: Image.asset('assets/icons/main_logo.png',
+            height: 42,
+            width: 139,
+            )),),
     );
   }
 }
