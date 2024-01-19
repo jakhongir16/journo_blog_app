@@ -10,8 +10,8 @@ class OnBoardingThird extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset('assets/images/onboarding_third_image.png', width: 390, height: 260,),
-        'Explore a wide selection of categories, or use the search bar to find specific topics'
+        Image.asset(AppAssets.onBoardingThird, width: 390, height: 260,),
+        AppStrings.onThirdBoard
             .text
             .size(15)
             .align(TextAlign.center)

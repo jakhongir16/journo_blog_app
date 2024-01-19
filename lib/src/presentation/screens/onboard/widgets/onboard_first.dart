@@ -9,8 +9,8 @@ class OnBoardingFirst extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset('assets/images/onboarding_first_image.png', height: 333, width: 333,),
-        'Discover, engage and read the latest articles oras well as share your own thoughts and ideas with the community'
+        Image.asset(AppAssets.onBoardingFirst, height: 333, width: 333,),
+        AppStrings.onFirstBoard
             .text
             .size(15)
             .align(TextAlign.center)
