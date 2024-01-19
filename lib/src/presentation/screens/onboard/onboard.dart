@@ -21,7 +21,8 @@ class _OnboardState extends State<Onboard> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                Image.asset('assets/images/journo_logo.png', color: AppColors.primaryColor,
+                Image.asset(AppAssets.mainLogo,
+                    color: AppColors.primaryColor,
                     height: 42,
                     width: 139,
                   ),
